@@ -10,7 +10,6 @@
   "dependencies": {
     "@supabase/supabase-js": "^1.29.1",
     "bulma": "^0.9.3",
-    "dropbox": "^10.23.0",
     "formidable": "^2.0.1",
     "next": "12.0.7",
     "react": "17.0.2",

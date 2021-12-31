@@ -25,7 +25,7 @@ export default async function handler(
       keepExtensions: true
     })
     const fileUpload = new Promise((resolve, reject) => {
-      form.parse(req, async (err, fields, files) => {
+      form.parse(req, async (err, fields, files: any) => {
         if (err) {
           reject(err)
         } else {
