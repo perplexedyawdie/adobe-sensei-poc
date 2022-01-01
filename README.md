@@ -1,4 +1,4 @@
-Proof of concept showing Adobe Photshop Image Cutout API
+Proof of concept showing Adobe Photoshop Image Cutout API
 
 ## Demo
 
