@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Proof of concept showing Adobe Photshop Image Cutout API
+
+## Demo
+
+https://user-images.githubusercontent.com/33191770/147852096-37e1f464-b92f-4f5f-ad84-03f14baa5e1f.mp4
 
 ## Getting Started
 
