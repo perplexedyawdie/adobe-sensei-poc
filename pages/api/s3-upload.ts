@@ -20,8 +20,8 @@ export default async function handler(
 
         const s3Client = new S3Client({
             credentials: {
-                accessKeyId: process.env.AWS_ACCESS_KEY_ID || '',
-                secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY || ''
+                accessKeyId: process.env.AWS_ACCESS_KEY_ID_1 || '',
+                secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY_1 || ''
             },
             region: 'us-west-1'
         })
@@ -36,7 +36,7 @@ export default async function handler(
                 } else {
                     // console.log(files)
                     const command = new PutObjectCommand({
-                        Bucket: process.env.AWS_S3_BUCKET_NAME || '',
+                        Bucket: process.env.AWS_S3_BUCKET_NAME_1 || '',
                         Key: `${files.img?.newFilename}`,
                         Body: fs.readFileSync(files.img?.filepath)
                     })

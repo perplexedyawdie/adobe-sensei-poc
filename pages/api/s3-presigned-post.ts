@@ -13,13 +13,13 @@ export default async function handler(
         const fileName = req.body.fileName;
         const s3Client = new S3Client({
             credentials: {
-                accessKeyId: process.env.AWS_ACCESS_KEY_ID || '',
-                secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY || ''
+                accessKeyId: process.env.AWS_ACCESS_KEY_ID_1 || '',
+                secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY_1 || ''
             },
             region: 'us-west-1'
         })
         const command = new PutObjectCommand({
-            Bucket: process.env.AWS_S3_BUCKET_NAME || '',
+            Bucket: process.env.AWS_S3_BUCKET_NAME_1 || '',
             Key: `cutout-${fileName}`,
         })
         const url = await getSignedUrl(s3Client, command, { expiresIn: 3600 });
